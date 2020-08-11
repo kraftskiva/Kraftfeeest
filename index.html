@@ -17,12 +17,13 @@
       document.getElementById("text4").style.visibility = "visible";
       document.getElementById("text5").style.visibility = "visible";
       document.getElementById("text6").style.visibility = "visible";
+      document.getElementById("button").style.visibility ="hidden" ;
 
     }
   </script>
 
   <style>
-    .button {
+    #button {
       background-color: #4caf50; /* Green */
       border: none;
       color: white;
@@ -30,6 +31,7 @@
       text-align: center;
       text-decoration: none;
       display: block;
+      visibility: unset;
       margin: 0 auto;
       font-size: 16px;
     }
@@ -37,7 +39,7 @@
     #container {
       visibility: hidden;
       background-size: 100vw;
-      background-image: url("https://thumbs.gfycat.com/PleasingMindlessIbisbill-size_restricted.gif");
+      background-image: url("https://media1.tenor.com/images/67942346549ae3f32e14892c5a7a3085/tenor.gif?itemid=15077564");
       min-height: 100vh;
       width: 100%;
     }
@@ -47,12 +49,15 @@
         text-align: center;
         font-size: large;
         color: blue;
+        font-size: 40px;
+
     }
     #rubrik2 {
         visibility: hidden;
         text-align: center;
         font-size: large;
         color: blue;
+        font-size: 40px;
     }
 
     #text { 
@@ -62,6 +67,7 @@
         color: coral;
         padding-left: 30%;
         padding-right: 30%;
+        font-size: 20px;
     }
     #text2 { 
         visibility: hidden;
@@ -70,6 +76,7 @@
         color: coral;
         padding-left: 30%;
         padding-right: 30%;
+        font-size: 20px;
     }
     #text3 { 
         visibility: hidden;
@@ -78,6 +85,7 @@
         color: coral;
         padding-left: 30%;
         padding-right: 30%;
+        font-size: 20px;
     }
     #text4 { 
         visibility: hidden;
@@ -86,6 +94,7 @@
         color: coral;
         padding-left: 30%;
         padding-right: 30%;
+        font-size: 20px;
     }
     #text5 { 
         visibility: hidden;
@@ -94,6 +103,7 @@
         color: coral;
         padding-left: 30%;
         padding-right: 30%;
+        font-size: 20px;
     }
 
     #text6 { 
@@ -103,6 +113,7 @@
         color: coral;
         padding-left: 30%;
         padding-right: 30%;
+        font-size: 20px;
     }
   </style>
   <body>
@@ -111,7 +122,7 @@
       id="hej"
       src="http://youtubetomp3.sc/index.php?output=yt/3GwjfUFyY6M/128%7e%7e1%7e%7eKool_The_Gang_-_Celebration_Official_Music_Video_uuid-5f286c3623f3d.mp3"
     ></audio>
-    <button class="button" type="button" onclick="myFunction()">
+    <button id="button" type="button" onclick="myFunction()">
       Set background image
     </button>
 

@@ -1,37 +1,139 @@
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+<html lang="sv">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  </head>
+  <script>
+    function myFunction() {
+      console.log("hello");
+      var audio = document.getElementById("hej");
+      audio.play();
+      document.getElementById("container").style.visibility = "visible";
+      document.getElementById("rubrik").style.visibility = "visible";
+      document.getElementById("rubrik2").style.visibility = "visible";
+      document.getElementById("text").style.visibility = "visible";
+      document.getElementById("text2").style.visibility = "visible";
+      document.getElementById("text3").style.visibility = "visible";
+      document.getElementById("text4").style.visibility = "visible";
+      document.getElementById("text5").style.visibility = "visible";
+      document.getElementById("text6").style.visibility = "visible";
 
-<html>
-<head>
-<style>
-.center {
-font-family: 'Mulish', sans-serif;
-  text-align: center; 
-  color: red;
-  background-image: url("https://media1.tenor.com/images/de8be5680a81acbb16f2fa4aaabef4ea/tenor.gif?itemid=13211112") ;
-  background-size: cover ;
-  height: 100% ;
-}
+    }
+  </script>
 
- p.smth {
- color: black ;
- background-color: yellow ;
- font-size: 60px ;
- opacity: 0.5 ;
- width: fit-content ;
- }
- 
- h1 {
- 	font-size: 100px;
- }
- 
- </style>
-</head>
-<body class="center">
-<iframe width="0%" height="1px" scrolling="no" frameborder="no" allow="autoplay" allow="playsinline" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/344986307&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fanfareciocarlia" title="FanfareCiocarlia" target="_blank" style="color: #cccccc; text-decoration: none;">FanfareCiocarlia</a> · <a href="https://soundcloud.com/fanfareciocarlia/crayfish-hora" title="Crayfish Hora" target="_blank" style="color: #cccccc; text-decoration: none;">Crayfish Hora</a></div>
+  <style>
+    .button {
+      background-color: #4caf50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      margin: 0 auto;
+      font-size: 16px;
+    }
 
-<h1>Kräftskiva!!</h1>
-	<p class="smth" >Beskrivining 
-	</p> 
-</body>
+    #container {
+      visibility: hidden;
+      background-size: 100vw;
+      background-image: url("https://thumbs.gfycat.com/PleasingMindlessIbisbill-size_restricted.gif");
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    #rubrik {
+        visibility: hidden;
+        text-align: center;
+        font-size: large;
+        color: blue;
+    }
+    #rubrik2 {
+        visibility: hidden;
+        text-align: center;
+        font-size: large;
+        color: blue;
+    }
+
+    #text { 
+        visibility: hidden;
+        text-align: center;
+        font-size: medium;
+        color: coral;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+    #text2 { 
+        visibility: hidden;
+        text-align: center;
+        font-size: medium;
+        color: coral;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+    #text3 { 
+        visibility: hidden;
+        text-align: center;
+        font-size: medium;
+        color: coral;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+    #text4 { 
+        visibility: hidden;
+        text-align: center;
+        font-size: medium;
+        color: coral;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+    #text5 { 
+        visibility: hidden;
+        text-align: center;
+        font-size: medium;
+        color: coral;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    #text6 { 
+        visibility: hidden;
+        text-align: center;
+        font-size: medium;
+        color: coral;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+  </style>
+  <body>
+
+    <audio
+      id="hej"
+      src="http://youtubetomp3.sc/index.php?output=yt/3GwjfUFyY6M/128%7e%7e1%7e%7eKool_The_Gang_-_Celebration_Official_Music_Video_uuid-5f286c3623f3d.mp3"
+    ></audio>
+    <button class="button" type="button" onclick="myFunction()">
+      Set background image
+    </button>
+
+    <div id="container" >
+        <h1 id="rubrik"> Käftskiva! </h1>
+        <p id="text" > ursäkter som då var ”Frank åker till Belgien”, ”Augusta fyller år”, ”Kräftor är gott” och ”En sista sommarfest” bestämde vi oss för att ordna en kräftskiva. 
+            På grund av rådande omständigheter stannar Frank i Lund till hösten men vi ser ingen anledning att ställa in. Som de säger:  ”...lockdown i Paris, vi svävar fram i Anders Tegnells Corona-paradis...”.
+            VAMRT välkomna på kräftskiva!! 
+            //Augusta och Frank </p> 
+            <h1 id="rubrik2"> PRAKTISKT </h2>  
+            <p id="text2" > När? 22 augusti kl 18.00 </p>
+        <p id="text3" > Var? Arkivgatan 1D </p>
+        <p id="text4" > Hur? Ni tar med egna kräftor och er egen favoritsnaps (tänk på att det kan bli många nubbar...)
+            Vi fixar resten. </p>
+        <p id="text5" > Festen kommer att fortsätta även efter kräftorna så ta med egen sprit och handsprit om man så vill. 
+            Vi fixar även sånghäfte men har man några visor man inte kan va utan så är det fritt fram att skicka dem till oss. </p> 
+
+        <p id="text6" > Skriv till oss när ni vet om ni kan komma eller inte så vi har lite koll!
+            PS. Plus ett är alltid välkomna. I detta ingår partners i öppna och stängda förhållanden. 
+            PPS. Såklart är det viktigt att vi inte sprider viruset vidare så känner man sig sjuk: stanna hemma! </p>
+
+    </div>
+    
+  </body>
 </html>

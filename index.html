@@ -8,6 +8,7 @@
       console.log("hello");
       var audio = document.getElementById("hej");
       audio.play();
+      iframe = document.getElementById("hej").style.visibility ="hidden";
       document.getElementById("container").style.visibility = "visible";
       document.getElementById("rubrik").style.visibility = "visible";
       document.getElementById("rubrik2").style.visibility = "visible";
@@ -167,13 +168,17 @@
     
   </style>
   <body>
-
+<iframe 
+        id="hej"
+        width="420" height="345" 
+        src="https://https://youtu.be/RT5GZ_EkLOIautoplay=1">
+</iframe>
+    
     <audio
       id="hej"
       src="\\Crayfish Hora.mp3"
-           
-          
-           
+   
+               
     ></audio>
     <button id="button" type="button" onclick="myFunction()">
       Sugen på kräftor?
